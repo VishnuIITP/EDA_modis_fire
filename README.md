@@ -22,7 +22,43 @@ The goal is to understand fire detection patterns, reliability, and severity usi
   - FRP (Fire Radiative Power) → energy released by fire (MW)  
   - Satellite → Aqua or Terra  
   - Day/Night flag → detection time  
-  - Acquisition date/time → when fire was observed  
+  - Acquisition date/time → when fire was observed
+
+ ## Installation
+
+i). **Clone the Repository**
+   ```bash
+   git clone https://github.com/VishnuIITP/EDA_modis_fire.git
+   cd Soil_Moist_analysis
+   ```
+
+ii). **Set Up Python Environment**
+   - Install Python 3.9 or higher.
+   - (Optional but recommended) Create a virtual environment:
+     ```bash
+     python -m venv venv
+     source venv/bin/activate   # Linux/Mac
+     venv\Scripts\activate      # Windows
+     ```
+
+iii). **Install Dependencies**
+   - Install required libraries:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Typical dependencies include:
+     - pandas  
+     - numpy  
+     - matplotlib  
+     - seaborn  
+     - scikit-learn
+
+iv0. **Verify Installation**
+   - Run a quick check:
+     ```bash
+     python eda.py
+     ```
+   - If everything is installed correctly, plots and results will be generated in the `results/` folder.
 
 ---
 
@@ -40,3 +76,5 @@ The analysis aims to:
 1. Clone the repository:
    ```bash
    git clone https://github.com/VishnuIITP/EDA_modis_fire.git
+
+   ```
