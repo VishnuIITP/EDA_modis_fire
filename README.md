@@ -29,7 +29,7 @@ The goal is to understand fire detection patterns, reliability, and severity usi
 i). **Clone the Repository**
    ```bash
    git clone https://github.com/VishnuIITP/EDA_modis_fire.git
-   cd Soil_Moist_analysis
+   cd EDA_modis_fire
    ```
 
 ii). **Set Up Python Environment**
@@ -73,8 +73,41 @@ The analysis aims to:
 ---
 
 ## 🚀 How to Use
-1. Clone the repository:
+
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/VishnuIITP/EDA_modis_fire.git
+   cd EDA_modis_fire
 
    ```
+2. **Set Up Python Environment**
+Install Python 3.9 or higher.
+
+(Optional but recommended) Create a virtual environment:
+ ```bash
+    python -m venv venv
+    source venv/bin/activate   # Linux/Mac
+    venv\Scripts\activate      # Windows
+```
+3. **Install Dependencies**
+
+Use the requirements.txt file to install all required libraries:
+```bash
+    pip install -r requirements.txt
+
+```
+4. **Run the Notebook**
+
+Launch Jupyter Notebook:
+```bash
+   jupyter notebook eda_modis_fire.ipynb
+
+```
+
+5. **Check Outputs**
+
+Preprocessed dataset will be saved as:
+```bash
+   cleaned_fire_data.csv
+
+```
