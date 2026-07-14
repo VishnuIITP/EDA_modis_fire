@@ -72,6 +72,35 @@ The analysis aims to:
 
 ---
 
+# 📂 Project Structure & Flow
+
+## Directory Setup
+- Created `preprocessing/` package with:
+  - `__init__.py` - makes it a Python package
+  - `config.py` - dataset configs + `get_config()`
+  - `loader.py` - file loading function
+  - `preprocess.py` - preprocessing logic
+  - `validate.py` - validation helpers
+
+## Main Script
+- Added `main.py` at project root:
+  - Imports modules from `preprocessing/`
+  - Loads dataset (`loader.py`)
+  - Selects config (`config.py`)
+  - Preprocesses data (`preprocess.py`)
+  - Validates split & scaling (`validate.py`)
+  - Prints results in terminal
+
+## Flow Demonstration
+1. **Run `main.py`** → executes pipeline end‑to‑end  
+2. **Output in terminal** → shows dataset shape, train/test split, target distribution, scaling range, missing values  
+3. **Notebook usage** → now imports functions from `preprocessing/` instead of redefining code  
+
+## Outcome
+- Pipeline is modular, reusable, and no longer notebook‑dependent.  
+- Can be imported in other scripts or extended for model training.  
+
+
 ## 🚀 How to Use
 
 1. **Clone the Repository**
